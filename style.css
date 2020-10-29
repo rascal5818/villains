@@ -1,0 +1,73 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #ef233c;
+  color: #ffffff;
+}
+
+::selection {
+  background: #ef233c;
+  color: #ffffff;
+}
+
+#landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr / 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18em;
+}
+
+p {
+  font-size: 2em;
+}
+
+#hannibal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+  -ms-grid-columns: (1fr)[10];
+      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  height: 100vh;
+}
+
+#hannibal-box {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  border: 1px solid black;
+}
+
+#hannibal-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#hannibal-details {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

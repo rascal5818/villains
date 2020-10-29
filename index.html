@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>VILLAINS</title>
+</head>
+<body>
+  <script>
+    // Select villain images
+    const hannibal = document.querySelector('#hannibal-image');
+
+    let hannibal_scrolled = window.pageYOffset;
+
+    let rate1 = hannibal_scrolled * 2;
+    
+    hannibal.style.transform =
+        'translate3d(0px, ' + rate1 + 'px, 0px)';
+    
+  </script>
+  <div id="landing">
+    <div>
+      <h1>VILLAINS</h1>
+      <p>Scroll down...</p>
+    </div>
+  </div>
+  <div id="hannibal">
+    <div id="hannibal-box">
+      <img src="img/hannibal.jpg" id="hannibal-image" />
+    </div>
+    <div id="hannibal-details">
+      <h2>Hannibal Lectar</h2>
+      <h2></h2>
+    </div>
+  </div>
+  <div id="joker"></div>
+  <div id="villain3"></div>
+  <div id="villain4"></div>
+</body>
+</html>
