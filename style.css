@@ -31,8 +31,27 @@ h1 {
   font-size: 18em;
 }
 
+h2 {
+  margin: 0;
+}
+
 p {
   font-size: 2em;
+}
+
+#text {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  position: relative;
+}
+
+#blood1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 #hannibal {
@@ -51,7 +70,10 @@ p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
-  border: 1px solid black;
+  background-image: url("img/hannibal.jpg");
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #hannibal-image {
@@ -68,6 +90,187 @@ p {
   -ms-grid-column: 6;
   -ms-grid-column-span: 4;
   grid-column: 6 / 10;
-  border: 1px solid black;
+  font-size: 8em;
+  color: #621708;
+}
+
+#grey {
+  color: #272932;
+}
+
+#blood2 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 4;
+  grid-row: 6 / 10;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3 / 10;
+}
+
+#joker {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+  -ms-grid-columns: (1fr)[10];
+      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  height: 100vh;
+}
+
+#joker-box {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / 10;
+  background-image: url("img/joker.png");
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#joker-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#joker-details {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  font-size: 8em;
+  color: #084605;
+}
+
+#purple {
+  color: #270E42;
+}
+
+#blood3 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 6;
+  grid-row: 4 / 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2 / 8;
+}
+
+#norman {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+  -ms-grid-columns: (1fr)[10];
+      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  height: 100vh;
+}
+
+#norman-box {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  background-image: url("img/norman.jpg");
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#norman-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#norman-details {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2 / 10;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  font-size: 8em;
+  color: #EED554;
+}
+
+#bates {
+  color: #13140C;
+}
+
+#blood4 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 4;
+  grid-row: 6 / 10;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4 / 10;
+}
+
+#anton {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[10];
+  -ms-grid-columns: (1fr)[10];
+      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
+  height: 100vh;
+}
+
+#anton-box {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 5;
+  grid-row: 4 / 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2 / 10;
+  background-image: url("img/anton.jpg");
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#anton-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#anton-details {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 4;
+  grid-row: 6 / 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1 / 11;
+  place-self: center;
+  font-size: 8em;
+  color: #EED554;
+}
+
+#blood5 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  grid-row: 7 / 10;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4 / 10;
+}
+
+#hannibal-box,
+#joker-box,
+#norman-box,
+#anton-box {
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */

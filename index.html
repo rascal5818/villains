@@ -8,35 +8,65 @@
   <title>VILLAINS</title>
 </head>
 <body>
-  <script>
-    // Select villain images
-    const hannibal = document.querySelector('#hannibal-image');
-
-    let hannibal_scrolled = window.pageYOffset;
-
-    let rate1 = hannibal_scrolled * 2;
-    
-    hannibal.style.transform =
-        'translate3d(0px, ' + rate1 + 'px, 0px)';
-    
-  </script>
   <div id="landing">
-    <div>
+    <div id="text">
       <h1>VILLAINS</h1>
       <p>Scroll down...</p>
     </div>
+    <div id="blood1">
+      <img src="img/blood1.png" />
+    </div>
   </div>
+
   <div id="hannibal">
-    <div id="hannibal-box">
-      <img src="img/hannibal.jpg" id="hannibal-image" />
-    </div>
+    <div id="hannibal-box" data-rellax-speed="1.5"></div>
     <div id="hannibal-details">
-      <h2>Hannibal Lectar</h2>
-      <h2></h2>
+      <h2>Hannibal <span id="grey">Lectar</span></h2>
+    </div>
+    <div id="blood2">
+      <img src="img/blood2.png" />
     </div>
   </div>
-  <div id="joker"></div>
-  <div id="villain3"></div>
+
+  
+  <div id="joker">
+    <div id="joker-details">
+      <h2>The <span id="purple">Joker</span></h2>
+    </div>
+    <div id="joker-box" data-rellax-speed="1.5"></div>
+    <div id="blood3">
+      <img src="img/blood3.png" />
+    </div>
+  </div>
+
+  <div id="norman">
+    <div id="norman-details">
+      <h2>Norman <span id="bates">Bates</span></h2>
+    </div>
+    <div id="norman-box" data-rellax-speed="1.5"></div>
+    <div id="blood4">
+      <img src="img/blood4.png" />
+    </div>
+  </div>
+
+  <div id="anton">
+    <div id="anton-details">
+      <h2>Anton <span id="bates">Chigurh</span></h2>
+    </div>
+    <div id="anton-box" data-rellax-speed="1"></div>
+    <div id="blood5">
+      <img src="img/blood5.png" />
+    </div>
+  </div>
+
   <div id="villain4"></div>
+  <script src="rellax/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('#hannibal-box');
+    var rellax2 = new Rellax('#joker-box');
+    var rellax3 = new Rellax('#norman-box');
+    var rellax4 = new Rellax('#anton-box');
+  </script>
+
 </body>
 </html>
