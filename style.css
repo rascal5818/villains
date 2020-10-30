@@ -35,10 +35,6 @@ h2 {
   margin: 0;
 }
 
-p {
-  font-size: 2em;
-}
-
 #text {
   -ms-grid-row: 1;
   grid-row: 1;
@@ -54,7 +50,11 @@ p {
   grid-column: 1;
 }
 
-#hannibal {
+#hannibal,
+#joker,
+#norman,
+#anton,
+#pennywise {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[10];
@@ -76,7 +76,11 @@ p {
      object-fit: cover;
 }
 
-#hannibal-image {
+#hannibal-image,
+#joker-image,
+#norman-image,
+#anton-image,
+#pennywise-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -107,15 +111,6 @@ p {
   grid-column: 3 / 10;
 }
 
-#joker {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[10];
-  -ms-grid-columns: (1fr)[10];
-      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
-  height: 100vh;
-}
-
 #joker-box {
   -ms-grid-row: 2;
   -ms-grid-row-span: 8;
@@ -126,13 +121,6 @@ p {
   background-image: url("img/joker.png");
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#joker-image {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -161,15 +149,6 @@ p {
   grid-column: 2 / 8;
 }
 
-#norman {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[10];
-  -ms-grid-columns: (1fr)[10];
-      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
-  height: 100vh;
-}
-
 #norman-box {
   -ms-grid-row: 2;
   -ms-grid-row-span: 8;
@@ -180,13 +159,6 @@ p {
   background-image: url("img/norman.jpg");
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#norman-image {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -216,15 +188,6 @@ p {
   place-self: center;
 }
 
-#anton {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[10];
-  -ms-grid-columns: (1fr)[10];
-      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
-  height: 100vh;
-}
-
 #anton-box {
   -ms-grid-row: 4;
   -ms-grid-row-span: 5;
@@ -235,13 +198,6 @@ p {
   background-image: url("img/anton.jpg");
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#anton-image {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -272,15 +228,6 @@ p {
   place-self: center;
 }
 
-#pennywise {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[10];
-  -ms-grid-columns: (1fr)[10];
-      grid-template: repeat(10, 1fr)/repeat(10, 1fr);
-  height: 100vh;
-}
-
 #pennywise-box {
   -ms-grid-row: 3;
   -ms-grid-row-span: 8;
@@ -291,13 +238,6 @@ p {
   background-image: url("img/pennywise.jpg");
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#pennywise-image {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -333,5 +273,29 @@ p {
 #anton-box {
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1560px) {
+  h1 {
+    font-size: 12em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  #blood-size {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 8em;
+  }
+  h2 {
+    font-size: 0.7em;
+  }
+  #blood-size {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
